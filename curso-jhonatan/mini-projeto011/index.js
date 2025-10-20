@@ -5,10 +5,9 @@ function Endereco(rua, cidade, cep) {
 }
 
 function exibirEndereco(endereco) {
-    console.log(`Você mora na rua ${endereco.rua}`);
-    console.log(`Na cidade ${endereco.cidade}`);
-    console.log(`Com cep ${endereco.cep}`);
-    console.log(`No bairro ${endereco.bairro}`);
+    for (chave in endereco) {
+        console.log(chave, endereco[chave]);
+    }
 }
 
 const meuEndereco = new Endereco('Carlos Eduardo', 'Piçarras', '88380000');
