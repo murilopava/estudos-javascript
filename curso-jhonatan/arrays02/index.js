@@ -60,7 +60,7 @@ outro = numeros3;
 
 // Solução 2
 // apaga todas as referências
-numeros.length = 0;
+numeros3.length = 0;
 console.log(numeros3);
 console.log(outro);
 
@@ -74,3 +74,17 @@ console.log(outro);
 // while (numeros3 > 0) {
 //     numeros.pop();
 // }
+
+
+// Combinando arrays
+
+const numeros4 = [1,2,3,4,5];
+
+const combinado = numeros4.join('.');
+console.log(combinado);
+
+const frase = 'olá seja bem vindo';
+const resultado = frase.split(' ');
+console.log(resultado);
+
+console.log(resultado.join('-'))
